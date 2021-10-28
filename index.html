@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Conso d'Api</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <H1>CONSOMMER UNE API</H1>
+    <br>
+    <div class="boutons">
+
+        <button class="button" id="get" >GET</button>
+        <button class="button" id="post" >POST</button>
+        <button class="button" id="put" >PUT</button>
+        <button class="button" id="delete" >DELETE</button>
+        
+
+    </div>
+    <br>
+    <hr>
+    <div id="formulaire">
+
+        <h2>Ajouter une entrée</h2>
+
+        <form action="#" id="operationForm">
+          
+          <div>
+            <label for="firstname"><small>champ obligatoire</small></label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Prénom"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="lastname"><small>champ obligatoire</small></label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Nom de Famille"
+              required
+            />
+          </div>
+
+            <br>
+
+          <div class="text-center">
+            <button type="submit" class="btSubmit">Envoyer</button>
+          </div>
+
+        </form>
+        <hr>
+
+      </div>
+
+    <div class="main">
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

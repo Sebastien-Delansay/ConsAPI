@@ -1,0 +1,18 @@
+H1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+}
+
+body{
+    padding-top: 50px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.button{
+    width: 150px;
+}
