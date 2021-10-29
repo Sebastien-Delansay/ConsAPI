@@ -1,0 +1,39 @@
+H1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+}
+
+body{
+    background-color: darkgray;
+    padding-top: 50px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.button{
+    width: 250px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.mainuser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
