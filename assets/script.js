@@ -8,8 +8,7 @@ fetch('https://reqres.in/api/users')
         <div class="card-body">
             <h5 class="card-title">${el.first_name} ${el.last_name}</h5>
             <p class="card-text">${el.email}</p>
-            <a href="./put.html?id=${el.id}" class="btn btn-primary">Modifier</a>
-            <a href="#" class="btn btn-secondary">Supprimer</a>
+            
         </div>
         </div>
         `
