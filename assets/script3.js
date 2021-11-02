@@ -49,8 +49,17 @@ operationForm.addEventListener("submit", async function (event) {
     };
 
     fetch(`https://reqres.in/api/users/${identity}`, option)
-      // .then((res) => res.json())
+      .then((res) => {statu = res.status;
+        document.querySelector(".reqres").innerHTML = `<h5>Statut de la requête : ${statu}</h5>`},
+      
+      
+      )
       .then((data) => console.log(data));
+      
+
+      
+
+
   });
 
 
