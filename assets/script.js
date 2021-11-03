@@ -22,7 +22,7 @@ const operationForm2 = document.getElementById("operationForm2");
 
 operationForm2.addEventListener("submit",(event) =>{
   //empêche le rechargement auto de la page
-  event.preventDefault();
+//   event.preventDefault();
 
   const formData = new FormData(operationForm2);
   const dataInsert = Object.fromEntries(formData.entries());
