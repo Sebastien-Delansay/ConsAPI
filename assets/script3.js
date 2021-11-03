@@ -33,6 +33,8 @@ operationForm.addEventListener("submit", async function (event) {
                   <a href="#" class="btn btn-secondary" id="supp">Supprimer</a>
               </div>
           </div>`;
+
+          
   });
 
   const deleting = document.getElementById("supp");
@@ -49,19 +51,14 @@ operationForm.addEventListener("submit", async function (event) {
     };
 
     fetch(`https://reqres.in/api/users/${identity}`, option)
-      .then((res) => {statu = res.status;
-        document.querySelector(".reqres").innerHTML = `<h5>Statut de la requête : ${statu}</h5>`},
-      
-      
-      )
+      .then((res) => {
+        statu = res.status;
+        document.querySelector(
+          ".reqres"
+        ).innerHTML = `<h5>Statut de la requête : ${statu}</h5>`;
+      })
       .then((data) => console.log(data));
-      
-
-      
-
-
   });
-
 
   modifing.addEventListener("click", (e) => {
     e.preventDefault();
@@ -69,14 +66,17 @@ operationForm.addEventListener("submit", async function (event) {
     const option = {
       method: "PUT",
       body: JSON.stringify(dataInsert),
-       headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
     };
 
     fetch(`https://reqres.in/api/users/${identity}`, option)
-      .then((res) => res.json())
+      .then((res) => {res.json(),
+      statu = res.status;
+        document.querySelector(
+          ".reqres"
+        ).innerHTML = `<h5>Statut de la requête : ${statu}</h5>`;
+      })
+      
       .then((data) => console.log(data));
   });
-
-
-
 });
